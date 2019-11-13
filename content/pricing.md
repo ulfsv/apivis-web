@@ -6,7 +6,9 @@ sections:
       - actions:
           - label: Order Now
             url: /signup
-        details: '* Exceptionally fast static web site'
+        details: |-
+          * Exceptionally fast static 
+          * web site
         highlight: false
         price: $5/m
         title: Paloma Slush
@@ -19,7 +21,7 @@ sections:
           * interface in the cloud
           * 1 Shared CPU
           * 512MB RAM
-          * 1GB high-performance SSDs
+          * 1GB SSD
         highlight: false
         price: Free
         title: Hinode
@@ -32,7 +34,7 @@ sections:
           * interface in the cloud
           * 1 Shared CPU
           * 512MB RAM
-          * 5GB high-performance SSDs
+          * 5GB SSD
         price: $14/m
         title: Green hornet
       - actions:
@@ -44,7 +46,7 @@ sections:
           * interface in the cloud
           * 1 CPU
           * 1GB RAM
-          * 5GB high-performance SSDs
+          * 5GB SSD
         highlight: false
         price: $30/m
         title: Purple super Paste
