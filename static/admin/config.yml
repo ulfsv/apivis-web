@@ -1174,3 +1174,4 @@ collections:
     filter:
       field: layout
       value: post
+publish_mode: editorial_workflow
