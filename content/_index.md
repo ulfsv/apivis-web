@@ -81,6 +81,11 @@ sections:
     section_id: recent-posts
     title: Latest Posts
     type: section_posts
+  - bg: gray
+    faqitems:
+      - answer: This is a static web site.
+        question: What is this?
+    type: section_faq
 menu:
   main:
     name: Home
