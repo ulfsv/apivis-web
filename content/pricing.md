@@ -37,19 +37,6 @@ sections:
           * 5GB SSD
         price: $14/m
         title: Green hornet
-      - actions:
-          - label: Order Now
-            url: /signup
-        details: |-
-          * Node-red service
-          * A web-based graphical user 
-          * interface in the cloud
-          * 1 CPU
-          * 1GB RAM
-          * 5GB SSD
-        highlight: false
-        price: $30/m
-        title: Purple super Paste
     section_id: pricing
     subtitle: You can have a separate pricing page or list everything on the home page.
     title: Pricing Plans
