@@ -13,20 +13,35 @@ sections:
       - actions:
           - label: Order Now
             url: /signup
-        details: "* Node-red service\n* A web-based graphical user interface in the cloud\r\n* 1 Shared CPU\r\n* 512MB RAM\r\n* 1GB SSD high-performance SSDs"
+        details: |-
+          * Node-red service
+          * A web-based graphical user interface in the cloud
+          * 1 Shared CPU
+          * 512MB RAM
+          * 1GB high-performance SSDs
         highlight: false
         price: Free
         title: Hinode
       - actions:
           - label: Order Now
             url: /signup
-        details: "* Node-red service\n* \rA web-based graphical user interface in the cloud\r\n* 1 Shared CPU\n* 512MB RAM\r\n* 5GB SSD high-performance SSDs"
+        details: |-
+          * Node-red service
+          * A web-based graphical user interface in the cloud
+          * 1 Shared CPU
+          * 512MB RAM
+          * 5GB high-performance SSDs
         price: $14/m
         title: Green hornet
       - actions:
           - label: Order Now
             url: /signup
-        details: "*  \rNode-red service\r\n* A web-based graphical user interface in the cloud\r\n* 1 CPU\r\n* 1GB RAM\r\n* 5GB SSD high-performance SSDs"
+        details: |-
+          * Node-red service
+          * A web-based graphical user interface in the cloud
+          * 1 CPU
+          * 1GB RAM
+          * 5GB high-performance SSDs
         highlight: false
         price: $30/m
         title: Purple super Paste
