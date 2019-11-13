@@ -15,7 +15,8 @@ sections:
             url: /signup
         details: |-
           * Node-red service
-          * A web-based graphical user interface in the cloud
+          * A web-based graphical user 
+          interface in the cloud
           * 1 Shared CPU
           * 512MB RAM
           * 1GB high-performance SSDs
@@ -27,7 +28,8 @@ sections:
             url: /signup
         details: |-
           * Node-red service
-          * A web-based graphical user interface in the cloud
+          * A web-based graphical user 
+          * interface in the cloud
           * 1 Shared CPU
           * 512MB RAM
           * 5GB high-performance SSDs
@@ -38,7 +40,8 @@ sections:
             url: /signup
         details: |-
           * Node-red service
-          * A web-based graphical user interface in the cloud
+          * A web-based graphical user 
+          * interface in the cloud
           * 1 CPU
           * 1GB RAM
           * 5GB high-performance SSDs
