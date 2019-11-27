@@ -4,9 +4,7 @@ sections:
   - actions:
       - label: Learn More
         url: /features
-    content: >-
-      Azimuth is the perfect theme for developers, designers and entrepreneurs
-      who need a sleek, modern SaaS site. 
+    content: "Easily integrate your services with the Rodened platform. \r\\\nLike calendar, email, chat, databases, customer relationship management, e-commerce, machine learning and the internet of things."
     image: /images/apps-blur-button-close-up-267350.jpg
     section_id: hero
     title: 'Quickly connect services, API and IoT hardware'
