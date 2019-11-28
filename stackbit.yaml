@@ -51,6 +51,7 @@ models:
               - purple
               - green
               - orange
+              - grey
             default: blue
           - type: object
             name: header
@@ -466,7 +467,17 @@ models:
       - type: image
         name: image
         label: Image
-        description: The image of the section.
+        description: The image of the section.        
+      - type: enum
+        name: bg
+        label: Background
+        description: The background of the section.
+        options:
+          - gray
+          - white
+          - grey
+          - blue
+        default: gray
       - type: list
         name: actions
         label: Action Buttons
