@@ -31,13 +31,14 @@ collections:
                 name: palette
                 label: Color Palette
                 required: false
-                default: blue
+                default: grey
                 hint: The color palette of the theme.
                 options:
                   - blue
                   - purple
                   - green
                   - orange
+                  - white
               - widget: object
                 name: header
                 label: Header Configuration
@@ -346,6 +347,8 @@ collections:
                 hint: The background of the section.
                 options:
                   - gray
+                  - white
+                  - blue
                   - white
               - widget: list
                 name: actions
