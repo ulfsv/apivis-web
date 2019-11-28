@@ -10,7 +10,7 @@ sections:
       \
 
       Like calendar, email, chat, databases, customer relationship management,
-      e-commerce, machine learning and the internet of things..
+      e-commerce, machine learning and the internet of things.
     image: /images/apps-blur-button-close-up-267350.jpg
     section_id: hero
     title: 'Quickly connect services, API and IoT hardware'
