@@ -22,6 +22,45 @@
         {{ end }}
         <div class="plan-details">
           {{ partial "markdownify-block" $plan.details }}
+          <p>Fill in your GitHub user and token to secure your Rodened server.</p>
+
+   <label>GitHub User :</label>
+   <input type="text" name="github_user" id="githubuser" placeholder="github_user" />
+   <label>Github Token :</label>
+   <input type="text" name="github_token" id="githubtoken" placeholder="github_token" />
+   <input type="button" name="submit_class" id="btn_class" value="Submit by Class" onclick="submit_by_class()"/>
+   </form>
+
+   <script>
+   // Submit form with class function.
+   function submit_by_class() {
+   var github_token = document.getElementById("githubtoken").value;
+   var github_user = document.getElementById("githubuser").value;
+   if (validation()) // Calling validation function
+   {
+   var x = document.getElementsByClassName("form_class");
+   x[0].submit(); //form submission
+   //alert(" Name : " + github_token + " n Email : " + github_user + " n Form Class : " + document.getElementById("form_id").getAttribute("class") + "nn Form Submitted Successfully......");
+   const Http = new XMLHttpRequest();
+const url='https://demo.partial.ly/checkout?offer=e059e0f5-5bf3-4664-b598-8b66016bbedd&meta[github_user]=' + github_user + '&meta[github_token]=' + github_token + '&amount=12&meta[description]=Subscribe';
+
+console.log('url ', url);
+window.location = url;
+   }
+   }
+
+function validation() {
+var github_user = document.getElementById("githubuser").value;
+var github_token = document.getElementById("githubtoken").value;
+//var emailReg = /^([w-.]+@([w-]+.)+[w-]{2,4})?$/;
+if (github_user === '' || github_token === '') {
+alert("Please fill all fields...!!!!!!");
+return false;
+} else {
+return true;
+}
+}
+</script>
         </div>
         {{ if $plan.actions }}
           {{ $include_dict := dict "actions" $plan.actions }}
