@@ -4,7 +4,13 @@ sections:
   - actions:
       - label: Learn More
         url: /features
-    content: "Easily integrate your services with the Rodened platform. \r\\\nLike calendar, email, chat, databases, customer relationship management, e-commerce, machine learning and the internet of things."
+    content: >-
+      Easily integrate your services with the Rodened platform. 
+
+      \
+
+      Like calendar, email, chat, databases, customer relationship management,
+      e-commerce, machine learning and the internet of things..
     image: /images/apps-blur-button-close-up-267350.jpg
     section_id: hero
     title: 'Quickly connect services, API and IoT hardware'
