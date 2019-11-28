@@ -20,19 +20,6 @@ sections:
             url: /signup
         details: |-
           * Node-red service
-          * A web-based graphical user
-          * interface in the cloud
-          * 1 Shared CPU
-          * 512MB RAM
-          * 1GB SSD
-        highlight: false
-        price: Free
-        title: Hinode
-      - actions:
-          - label: Order Now
-            url: /signup
-        details: |-
-          * Node-red service
           * Web-based
           * 1 Shared CPU
           * 512MB RAM
