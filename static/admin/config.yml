@@ -39,6 +39,7 @@ collections:
                   - green
                   - orange
                   - white
+                  - grey
               - widget: object
                 name: header
                 label: Header Configuration
