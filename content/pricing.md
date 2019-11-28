@@ -7,10 +7,13 @@ sections:
           - label: Order Now
             url: /signup
         details: |-
-          * Exceptionally fast static 
-          * web site
+          * Node-red trial service
+          * Web-based
+          * 1 Shared CPU
+          * 512MB RAM
+          * Shared SDD
         highlight: false
-        price: $5/m
+        price: $2/m
         title: Paloma Slush
       - actions:
           - label: Order Now
@@ -30,13 +33,16 @@ sections:
             url: /signup
         details: |-
           * Node-red service
-          * A web-based graphical user 
-          * interface in the cloud
+          * Web-based
           * 1 Shared CPU
           * 512MB RAM
           * 5GB SSD
         price: $14/m
         title: Green hornet
+      - details: "* Node-red service\n* Web-based\n* 1 CPU\n* 1GB RAM\r\n* 5GB SSD"
+        highlight: false
+        price: 30$/m
+        title: Purple Super Paste
     section_id: pricing
     subtitle: You can have a separate pricing page or list everything on the home page.
     title: Pricing Plans
