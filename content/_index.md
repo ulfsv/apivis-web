@@ -82,9 +82,7 @@ sections:
     title: Latest Posts
     type: section_posts
   - bg: gray
-    faqitems:
-      - answer: This is a static web site.
-        question: What is this?
+    faqitems: []
     type: section_faq
 menu:
   main:
