@@ -5,12 +5,8 @@ sections:
       - label: Learn More
         url: /features
     content: >-
-      Easily integrate your services with the Rodened platform. 
-
-      \
-
-      Like calendar, email, chat, databases, customer relationship management,
-      e-commerce, machine learning and the internet of things.
+      Easily integrate calendar, email, chat, databases, e-commerce, machine
+      learning and the internet of things.
     image: ''
     section_id: hero
     title: 'Quickly connect services, API and IoT hardware'
