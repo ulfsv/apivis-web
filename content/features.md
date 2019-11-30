@@ -22,7 +22,7 @@ sections:
   - bg: gray
     featureslist:
       - content: "A tool for wiring together online services, APIs and hardware devices.\r\n\nWe provide a browser-based editor that makes it easy to set up flows using a wide range of nodes."
-        image: /images/feature1.jpg
+        image: /images/8.jpg
         title: Flow based editor in the cloud
       - content: >-
           Manage your flows as projects backed by a Git repository. The flows
@@ -33,6 +33,7 @@ sections:
       - content: >-
           Connect a Google Dialogflow AI powered chatbot to Telegram, Slack,
           Messenger or other services through your REST APIs.
+        image: /images/feature1.jpg
         title: Build your own APIs
       - content: >-
           Connect to existing AI services for sentiment analysis, text to
