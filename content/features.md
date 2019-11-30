@@ -22,11 +22,13 @@ sections:
   - bg: gray
     featureslist:
       - content: "A tool for wiring together online services, APIs and hardware devices.\r\n\nWe provide a browser-based editor that makes it easy to set up flows using a wide range of nodes."
+        image: /images/feature1.jpg
         title: Flow based editor in the cloud
       - content: >-
           Manage your flows as projects backed by a Git repository. The flows
           are version controlled and securely encrypted in the Github
           repository.
+        image: /images/version.jpg
         title: Version control of your flows
       - content: >-
           Connect a Google Dialogflow AI powered chatbot to Telegram, Slack,
@@ -36,10 +38,12 @@ sections:
           Connect to existing AI services for sentiment analysis, text to
           speech, object detection or your own custom models and make them
           available from a javascript application frontend.
+        image: /images/feature2.jpg
         title: Setup a frontend for a machine learning model
       - content: >-
           Health check websites, home appliances power consumtion, 3D printer or
           other devices.
+        image: /images/black-flat-screen-computer-monitor-1714208.jpg
         title: Monitor network and devices
     title: What you get
     type: section_features
