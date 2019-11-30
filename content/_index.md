@@ -5,8 +5,8 @@ sections:
       - label: Learn More
         url: /features
     content: >-
-      Easily drag and drop to build your workflows to integrate cloud services,
-      email, chat, e-commerce, ai and more.
+      Create your workflows without coding and integrate cloud services, email,
+      chat, e-commerce, ai and more.
     image: ''
     section_id: hero
     title: 'Quickly connect services, API and IoT hardware'
