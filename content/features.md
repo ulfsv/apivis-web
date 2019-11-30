@@ -12,13 +12,6 @@ sections:
     section_id: features
     title: How it works
     type: section_content
-  - actions:
-      - label: Get Started
-        url: '#'
-    section_id: call-to-action
-    subtitle: This is an optional description for the call to action block.
-    title: This Is Call to Action Block!
-    type: section_cta
   - bg: gray
     featureslist:
       - content: "A tool for wiring together online services, APIs and hardware devices.\r\n\nWe provide a browser-based editor that makes it easy to set up flows using a wide range of nodes."
@@ -48,6 +41,13 @@ sections:
         title: Monitor network and devices
     title: What you get
     type: section_features
+  - actions:
+      - label: Get Started
+        url: '#'
+    section_id: call-to-action
+    subtitle: This is an optional description for the call to action block.
+    title: This Is Call to Action Block!
+    type: section_cta
 menu:
   main:
     name: Features
