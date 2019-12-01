@@ -31,7 +31,7 @@ sections:
         price: 30$/m
         title: Purple Super Paste
     section_id: pricing
-    subtitle: You can have a separate pricing page or list everything on the home page.
+    subtitle: ''
     title: Pricing Plans
     type: section_pricing
   - bg: gray
