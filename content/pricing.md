@@ -11,7 +11,7 @@ sections:
           * 512MB RAM
           * Shared SDD
         highlight: false
-        price: $2/m
+        price: '2'
         title: Paloma Slush
       - actions: []
         details: |-
@@ -20,11 +20,11 @@ sections:
           * 1 Shared CPU
           * 512MB RAM
           * 5GB SSD
-        price: $14/m
+        price: '14'
         title: Green hornet
       - details: "* Node-red service\n* Web-based\n* 1 CPU\n* 1GB RAM\r\n* 5GB SSD"
         highlight: false
-        price: 30$/m
+        price: '30'
         title: Purple Super Paste
     section_id: pricing
     subtitle: ''
