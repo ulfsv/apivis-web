@@ -11,10 +11,6 @@ sections:
     section_id: hero
     title: 'Quickly connect services, API and IoT hardware'
     type: section_hero
-  - bg: gray
-    section_id: recent-posts
-    title: Latest Posts
-    type: section_posts
 menu:
   main:
     name: Home
