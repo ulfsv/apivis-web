@@ -3,9 +3,7 @@ title: Pricing
 sections:
   - bg: gray
     pricingplans:
-      - actions:
-          - label: Order Now
-            url: /signup
+      - actions: []
         details: |-
           * Node-red trial service
           * Web-based
@@ -15,9 +13,7 @@ sections:
         highlight: false
         price: $2/m
         title: Paloma Slush
-      - actions:
-          - label: Order Now
-            url: /signup
+      - actions: []
         details: |-
           * Node-red service
           * Web-based
