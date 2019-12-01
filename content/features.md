@@ -1,11 +1,7 @@
 ---
 title: Features
 sections:
-  - actions:
-      - label: Free Trial
-        url: /signup
-      - label: View Demo
-        url: '#'
+  - actions: []
     bg: gray
     content: "1. Setup a free github account\r\n2. Submit github user and token\r\n3. We setup your cloud based platform in minutes\r\n4. Start building your flows. (examples included) \r\n5. Deploy for production"
     image: /images/yellow-hot-air-balloon-floating-1740097.jpg
