@@ -27,13 +27,13 @@ sections:
       - content: >-
           Connect a Google Dialogflow AI powered chatbot to Telegram, Slack,
           Messenger or other services through your REST APIs.
-        image: /images/feature1.jpg
+        image: /images/chatb.png
         title: Build your own APIs
       - content: >-
           Connect to existing AI services for sentiment analysis, text to
           speech, object detection or your own custom models and make them
           available from a javascript application frontend.
-        image: /images/feature2.jpg
+        image: /images/ML.png
         title: Setup a frontend for a machine learning model
       - content: >-
           Health check websites, home appliances power consumtion, 3D printer or
