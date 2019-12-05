@@ -20,8 +20,7 @@ sections:
         title: Flow based editor in the cloud
       - content: >-
           Manage your flows as projects backed by a Git repository. The flows
-          are version controlled and securely encrypted in the Github
-          repository.
+          are version controlled and securely encrypted in the Git repository.
         image: /images/versioning.png
         title: Version control of your flows
       - content: >-
