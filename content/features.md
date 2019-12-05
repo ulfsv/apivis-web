@@ -22,7 +22,7 @@ sections:
           Manage your flows as projects backed by a Git repository. The flows
           are version controlled and securely encrypted in the Github
           repository.
-        image: /images/version.jpg
+        image: /images/versioning.png
         title: Version control of your flows
       - content: >-
           Connect a Google Dialogflow AI powered chatbot to Telegram, Slack,
