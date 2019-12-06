@@ -15,7 +15,10 @@ sections:
     type: section_content
   - bg: gray
     featureslist:
-      - content: 'A tool for wiring together online services, APIs and hardware devices.'
+      - content: |-
+          A tool for wiring together online services, APIs and hardware devices.
+
+          You can try the editor [here](https://nodered.rodened.io/).
         image: /images/8.jpg
         title: Flow based editor in the cloud
       - content: >-
