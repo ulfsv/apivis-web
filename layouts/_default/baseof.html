@@ -38,7 +38,7 @@
    //alert(" Name : " + github_token + " n Email : " + github_user + " n Form Class : " + document.getElementById("form_id").getAttribute("class") + "nn Form Submitted Successfully......");
    const Http = new XMLHttpRequest();
 //const url='https://demo.partial.ly/checkout?offer=e059e0f5-5bf3-4664-b598-8b66016bbedd&meta[github_user]=' + github_user + '&meta[github_token]=' + github_token + '&amount=12&meta[description]=Subscribe';
-const url='https://demo.partial.ly/checkout?offer=+ offer + &meta[github_user]=' + github_user + '&meta[github_token]=' + github_token + '&amount={{ $plan.price }}&meta[description]=Subscribe';
+const url='https://demo.partial.ly/checkout?offer=+ offer + '&meta[github_user]=' + github_user + '&meta[github_token]=' + github_token + '&meta[description]=Subscribe';
 
 console.log('url ', url);
 window.location = url;
