@@ -75,8 +75,8 @@ console.log(mine.abc);
 
   mine.abc.addEventListener('submit', logSubmit);
   function validation() {
-    var github_user = document.getElementById("githubuser").value;
-    var github_token = document.getElementById("githubtoken").value;
+   var github_token = document.getElementById("githubtoken-{{ $plan.partiallyid }}").value;
+    var github_user = document.getElementById("githubuser-{{ $plan.partiallyid }}").value;
     //var emailReg = /^([w-.]+@([w-]+.)+[w-]{2,4})?$/;
     if (github_user === '' || github_token === '') {
       alert("Please fill in all fields!");
