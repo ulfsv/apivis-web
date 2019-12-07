@@ -10,7 +10,7 @@
     There's no "leave the wrapping <p> in place" option to markdownify, so we
     have to work around it ourselves.  We attempt to recognize all possible
     block-level tags to know whether the result "looks like blocks" or not, and
-    then add a wrapping <p> if we think it's needed.
+    then add a wrapping <p> if we think it's needed..
 
     To use: {{ partial "markdownify-block" .value.with.markdown }}
 */ -}}
