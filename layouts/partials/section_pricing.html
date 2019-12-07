@@ -49,8 +49,8 @@
    var logSubmit = "logSubmit";
     var validation = "validation";    
 var go = {};
-go[logSubmit] = logSubmit{{ $plan.partiallyid }};  
-go[validation] = validation{{ $plan.partiallyid }};         
+go[logSubmit] = logSubmit + {{ $plan.partiallyid }};  
+go[validation] = validation + {{ $plan.partiallyid }};         
  function go[logSubmit](event) {
     event.preventDefault();
      var token = "token";
