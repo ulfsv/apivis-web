@@ -51,7 +51,7 @@
 var go = {};
 go[logSubmit] = logSubmit + {{ $plan.partiallyid }};  
 go[validation] = validation + {{ $plan.partiallyid }};         
- function go.logSubmit (event) {
+ var function logSubmit (event) {
     event.preventDefault();
      var token = "token";
      var user = "user";
@@ -63,7 +63,7 @@ plan[user] = offer + {{ $plan.partiallyid }};
     plan.token = document.getElementById("githubtoken-{{ $plan.partiallyid }}").value;
     plan.user = document.getElementById("githubuser-{{ $plan.partiallyid }}").value;
     plan.offer = document.getElementById("partiallyid-{{ $plan.partiallyid }}").value;
-    if (validation{{ $plan.partiallyid }}()) // Calling validation function
+    if (validation()) // Calling validation function
     {
       const Http = new XMLHttpRequest();
       const url='https://demo.partial.ly/checkout?offer='+ plan.offer + '&meta[github_user]=' + plan.user + '&meta[github_token]=' + plan.token + '&amount=12&meta[description]=Subscribe';
@@ -81,7 +81,7 @@ console.log(mine.abc);
   mine.abc = document.getElementById('form-{{ $plan.partiallyid }}');
 
   mine.abc.addEventListener('submit', logSubmit{{ $plan.partiallyid }});
-  function go.validation () {
+ var function validation () {
    var token = "token";
      var user = "user";
       var offer = "offer";
