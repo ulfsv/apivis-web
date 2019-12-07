@@ -84,8 +84,8 @@ var plan = {};
 plan[token] = token + {{ $plan.partiallyid }};
 plan[user] = user + {{ $plan.partiallyid }};  
 plan[user] = offer + {{ $plan.partiallyid }};   
-   var plan.token = document.getElementById("githubtoken-{{ $plan.partiallyid }}").value;
-    var plan.user = document.getElementById("githubuser-{{ $plan.partiallyid }}").value;
+   plan.token = document.getElementById("githubtoken-{{ $plan.partiallyid }}").value;
+   plan.user = document.getElementById("githubuser-{{ $plan.partiallyid }}").value;
     //var emailReg = /^([w-.]+@([w-]+.)+[w-]{2,4})?$/;
     if (plan.user === '' || plan.token === '') {
       alert("Please fill in all fields!");
