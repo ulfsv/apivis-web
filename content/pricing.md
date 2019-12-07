@@ -11,6 +11,7 @@ sections:
           * 512MB RAM
           * Shared SDD
         highlight: false
+        partiallyid: 1ABCD
         price: $2/m
         title: Paloma Slush
       - actions: []
@@ -24,6 +25,7 @@ sections:
         title: Green hornet
       - details: "* Node-red service\n* Web-based\n* 1 CPU\n* 1GB RAM\r\n* 5GB SSD"
         highlight: false
+        partiallyid: 2ABCD
         price: $30/m
         title: Purple Super Paste
     section_id: pricing
