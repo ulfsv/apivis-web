@@ -50,16 +50,18 @@
     event.preventDefault();
      var token = "token";
      var user = "user";
-//var mine = {};
-//mine[token] = token + {{ $plan.partiallyid }};
-//mine[user] = token + {{ $plan.partiallyid }};       
-    var github_token = document.getElementById("githubtoken-{{ $plan.partiallyid }}").value;
-    var github_user = document.getElementById("githubuser-{{ $plan.partiallyid }}").value;
-    var offer = document.getElementById("partiallyid-{{ $plan.partiallyid }}").value;
+      var offer = "offer";
+var plan = {};
+plan[token] = token + {{ $plan.partiallyid }};
+plan[user] = user + {{ $plan.partiallyid }};  
+plan[user] = offer + {{ $plan.partiallyid }};         
+    plan.token = document.getElementById("githubtoken-{{ $plan.partiallyid }}").value;
+    plan.user = document.getElementById("githubuser-{{ $plan.partiallyid }}").value;
+    plan.offer = document.getElementById("partiallyid-{{ $plan.partiallyid }}").value;
     if (validation()) // Calling validation function
     {
       const Http = new XMLHttpRequest();
-      const url='https://demo.partial.ly/checkout?offer='+ offer + '&meta[github_user]=' + github_user + '&meta[github_token]=' + github_token + '&amount=12&meta[description]=Subscribe';
+      const url='https://demo.partial.ly/checkout?offer='+ plan.offer + '&meta[github_user]=' + plan.user + '&meta[github_token]=' + plan.token + '&amount=12&meta[description]=Subscribe';
 
       console.log('url ', url);
       window.location = url;
@@ -75,10 +77,17 @@ console.log(mine.abc);
 
   mine.abc.addEventListener('submit', logSubmit);
   function validation() {
-   var github_token = document.getElementById("githubtoken-{{ $plan.partiallyid }}").value;
-    var github_user = document.getElementById("githubuser-{{ $plan.partiallyid }}").value;
+   var token = "token";
+     var user = "user";
+      var offer = "offer";
+var plan = {};
+plan[token] = token + {{ $plan.partiallyid }};
+plan[user] = user + {{ $plan.partiallyid }};  
+plan[user] = offer + {{ $plan.partiallyid }};   
+   var plan.token = document.getElementById("githubtoken-{{ $plan.partiallyid }}").value;
+    var plan.user = document.getElementById("githubuser-{{ $plan.partiallyid }}").value;
     //var emailReg = /^([w-.]+@([w-]+.)+[w-]{2,4})?$/;
-    if (github_user === '' || github_token === '') {
+    if (plan.user === '' || plan.token === '') {
       alert("Please fill in all fields!");
       return false;
     } else {
