@@ -60,9 +60,9 @@
       window.location = url;
     }
   }
-  const form = document.getElementById('form-{{ $plan.partiallyid }}');
+  const form-{{ $plan.partiallyid }} = document.getElementById('form-{{ $plan.partiallyid }}');
 
-  form.addEventListener('submit', logSubmit);
+  form-{{ $plan.partiallyid }}.addEventListener('submit', logSubmit);
   function validation() {
     var github_user = document.getElementById("githubuser").value;
     var github_token = document.getElementById("githubtoken").value;
