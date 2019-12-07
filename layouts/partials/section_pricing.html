@@ -3,7 +3,7 @@
          
    // Submit form with class function.
     
-   window.partiallypost = function () {
+   function partiallypost() {
    var github_token = document.getElementById("githubtoken").value;
    var github_user = document.getElementById("githubuser").value;
    var offer = document.getElementById("partiallyid").value;
@@ -60,7 +60,7 @@ return true;
         <div class="plan-details">
           {{ partial "markdownify-block" $plan.details }}
           
-          <form action="#" method="post" name="form_name" id="form_id" class="subscribe-form">
+          <form name="form_name" id="form_id" class="subscribe-form">
           
           <p>Fill in your GitHub user and token to secure your Rodened server.</p>
 
@@ -77,7 +77,7 @@ return true;
             </div>
             
           
-   <input type="button" name="submit_class" id="btn_class" value="Subscribe" onclick="partiallypost();"/>
+   <input type="button" name="submit_class" id="btn_class" value="Subscribe" onclick="partiallypost(); return false;"/>
             
    <input type="hidden" name="partiallyid" id="partiallyid" value="{{ $plan.partiallyid }}" />         
    </form>
