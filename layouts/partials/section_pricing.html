@@ -23,13 +23,23 @@
         <div class="plan-details">
           {{ partial "markdownify-block" $plan.details }}
           
-          <form action="#" method="post" name="form_name" id="form_id" class="form_class">
+          <form action="#" method="post" name="form_name" id="form_id" class="subscribe-form">
           
           <p>Fill in your GitHub user and token to secure your Rodened server.</p>
 
-   <label>GitHub User :</label><input type="text" name="github_user" id="githubuser" placeholder="github_user" />
-   <label>Github Token :</label><input type="text" name="github_token" id="githubtoken" placeholder="github_token" style="margin-bottom:10px" />  
+            <div class="form-row"><label>
+              <span class="screen-reader-text">GitHub User</span>
+<input type="text" class="subscribe-email" name="github_user" id="githubuser" placeholder="github_user" />
+              </label>
+            </div>
+          
+              <div class="form-row"><label>
+              <span class="screen-reader-text">GitHub Token</span>
+<input type="text" class="subscribe-email" name="github_token" id="githubtoken" placeholder="github_token" style="margin-bottom:10px" />
+              </label>
+            </div>
             
+          
    <input type="button" name="submit_class" id="btn_class" value="Subscribe" onclick="submit_by_class()"/>
             
    <input type="hidden" name="partiallyid" id="partiallyid" value="{{ $plan.partiallyid }}" />         
