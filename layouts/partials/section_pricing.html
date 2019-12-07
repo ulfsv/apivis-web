@@ -60,9 +60,13 @@
       window.location = url;
     }
   }
+  var id = "abc";
+var mine = {};
+mine[id] = {{ $plan.partiallyid }};
+console.log(mine.abc);     
  var formprefix = {{ $plan.partiallyid }}; 
- var toevaluate = "form" + formprefix;      
-  const evaluate(toevaluate) = document.getElementById('form-{{ $plan.partiallyid }}');
+// var mine.abc = "form" + formprefix;      
+  const mine.abc = document.getElementById('form-{{ $plan.partiallyid }}');
 
   form-{{ $plan.partiallyid }}.addEventListener('submit', logSubmit);
   function validation() {
