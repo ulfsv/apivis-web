@@ -1,37 +1,5 @@
 <section id="{{ .section.section_id }}" class="block pricing-block bg-{{ .section.bg }} outer">
-  <script type="text/javascript"> 
- function logSubmit(event) {
-    event.preventDefault();
-    var github_token = document.getElementById("githubtoken").value;
-    var github_user = document.getElementById("githubuser").value;
-    var offer = document.getElementById("partiallyid").value;
-    if (validation()) // Calling validation function
-    {
-      const Http = new XMLHttpRequest();
-      const url='https://demo.partial.ly/checkout?offer='+ offer + '&meta[github_user]=' + github_user + '&meta[github_token]=' + github_token + '&meta[description]=Subscribe';
-
-      console.log('url ', url);
-      window.location = url;
-    }
-  }
-  const form = document.getElementById('form');
-
-  form.addEventListener('submit', logSubmit);
-  function validation() {
-    var github_user = document.getElementById("githubuser").value;
-    var github_token = document.getElementById("githubtoken").value;
-    //var emailReg = /^([w-.]+@([w-]+.)+[w-]{2,4})?$/;
-    if (github_user === '' || github_token === '') {
-      alert("Please fill in all fields!");
-      return false;
-    } else {
-      return true;
-    }
-  }
-</script>
-    
-
-  <div class="block-header inner-small">
+    <div class="block-header inner-small">
     {{ if .section.title }}
     <h2 class="block-title">{{ .section.title }}</h2>
     {{ end }}
@@ -90,4 +58,34 @@
     </div><!-- .grid -->
   </div><!-- .inner -->
   {{ end }}
+  <script type="text/javascript"> 
+ function logSubmit(event) {
+    event.preventDefault();
+    var github_token = document.getElementById("githubtoken").value;
+    var github_user = document.getElementById("githubuser").value;
+    var offer = document.getElementById("partiallyid").value;
+    if (validation()) // Calling validation function
+    {
+      const Http = new XMLHttpRequest();
+      const url='https://demo.partial.ly/checkout?offer='+ offer + '&meta[github_user]=' + github_user + '&meta[github_token]=' + github_token + '&meta[description]=Subscribe';
+
+      console.log('url ', url);
+      window.location = url;
+    }
+  }
+  const form = document.getElementById('form');
+
+  form.addEventListener('submit', logSubmit);
+  function validation() {
+    var github_user = document.getElementById("githubuser").value;
+    var github_token = document.getElementById("githubtoken").value;
+    //var emailReg = /^([w-.]+@([w-]+.)+[w-]{2,4})?$/;
+    if (github_user === '' || github_token === '') {
+      alert("Please fill in all fields!");
+      return false;
+    } else {
+      return true;
+    }
+  }
+</script>
 </section><!-- .block -->
