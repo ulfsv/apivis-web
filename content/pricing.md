@@ -14,15 +14,6 @@ sections:
         partiallyid: 1ABCD
         price: $2/m
         title: Paloma Slush
-      - actions: []
-        details: |-
-          * Node-red service
-          * Web-based
-          * 1 Shared CPU
-          * 512MB RAM
-          * 5GB SSD
-        price: $14/m
-        title: Green hornet
       - details: "* Node-red service\n* Web-based\n* 1 CPU\n* 1GB RAM\r\n* 5GB SSD"
         highlight: false
         partiallyid: 2ABCD
