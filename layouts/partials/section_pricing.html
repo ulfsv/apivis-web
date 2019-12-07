@@ -18,13 +18,13 @@
         <div class="plan-inside">
         <h3 class="plan-name">{{ $plan.title }}</h3>
         {{ if $plan.price }}
-        <div class="plan-price">{{ $plan.price }} {{ $plan.partiallyid }}</div>
+        <div class="plan-price">{{ $plan.price }}</div>
         {{ end }}
         <div class="plan-details">
           {{ partial "markdownify-block" $plan.details }}
           
           <form action="#" method="post" name="form_name" id="form_id" class="form_class" >
-          <input type="hidden" name="partiallyid" id="partiallyid" value="{{ $plan.partiallyid }}" />
+          
           <p>Fill in your GitHub user and token to secure your Rodened server.</p>
 
    <label>GitHub User :</label>
@@ -32,6 +32,7 @@
    <label>Github Token :</label>
    <input type="text" name="github_token" id="githubtoken" placeholder="github_token" style="margin-bottom:10px" />            
    <input type="button" name="submit_class" id="btn_class" value="Subscribe" onclick="submit_by_class()"/>
+   <input type="hidden" name="partiallyid" id="partiallyid" value="{{ $plan.partiallyid }}" />         
    </form>
 
    
