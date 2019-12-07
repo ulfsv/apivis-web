@@ -1,8 +1,9 @@
 <section id="{{ .section.section_id }}" class="block pricing-block bg-{{ .section.bg }} outer">
   <script type="text/javascript">
-    window.addEventListener("load", function () {       
+         
    // Submit form with class function.
-   function partiallypost() {
+    
+   window.partiallypost = function () {
    var github_token = document.getElementById("githubtoken").value;
    var github_user = document.getElementById("githubuser").value;
    var offer = document.getElementById("partiallyid").value;
@@ -33,7 +34,7 @@ return false;
 return true;
 }
 }
-    }
+    
 </script> 
   <div class="block-header inner-small">
     {{ if .section.title }}
