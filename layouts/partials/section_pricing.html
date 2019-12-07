@@ -24,7 +24,7 @@
           {{ partial "markdownify-block" $plan.details }}
           
           <form action="#" method="post" name="form_name" id="form_id" class="form_class" >
-          
+          <input type="hidden" name="partiallyid" id="{{ $plan.partiallyid }}" value="{{ $plan.partiallyid }}" />
           <p>Fill in your GitHub user and token to secure your Rodened server.</p>
 
    <label>GitHub User :</label>
