@@ -51,7 +51,7 @@
 var go = {};
 go[logSubmit] = logSubmit + {{ $plan.partiallyid }};  
 go[validation] = validation + {{ $plan.partiallyid }};         
- var function logSubmit (event) {
+  function logSubmit (event) {
     event.preventDefault();
      var token = "token";
      var user = "user";
@@ -81,19 +81,19 @@ console.log(mine.abc);
   mine.abc = document.getElementById('form-{{ $plan.partiallyid }}');
 
   mine.abc.addEventListener('submit', logSubmit{{ $plan.partiallyid }});
- var function validation () {
+  function validation () {
    var token = "token";
      var user = "user";
-      var offer = "offer";
-var plan = {};
-plan[token] = token + {{ $plan.partiallyid }};
-plan[user] = user + {{ $plan.partiallyid }};  
+     
+var valid = {};
+valid[token] = token + {{ $plan.partiallyid }};
+valid[user] = user + {{ $plan.partiallyid }};  
  
-   plan.token = document.getElementById("githubtoken-{{ $plan.partiallyid }}").value;
-   plan.user = document.getElementById("githubuser-{{ $plan.partiallyid }}").value;
+   valid.token = document.getElementById("githubtoken-{{ $plan.partiallyid }}").value;
+   valid.user = document.getElementById("githubuser-{{ $plan.partiallyid }}").value;
        console.log(plan.token);
     //var emailReg = /^([w-.]+@([w-]+.)+[w-]{2,4})?$/;
-    if (plan.user === '' || plan.token === '') {
+    if (valid.user === '' || valid.token === '') {
       alert("Please fill in all fields!");
       return false;
     } else {
