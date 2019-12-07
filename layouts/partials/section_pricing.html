@@ -68,7 +68,7 @@ console.log(mine.abc);
 // var mine.abc = "form" + formprefix;      
   mine.abc = document.getElementById('form-{{ $plan.partiallyid }}');
 
-  form-{{ $plan.partiallyid }}.addEventListener('submit', logSubmit);
+  mine.abc.addEventListener('submit', logSubmit);
   function validation() {
     var github_user = document.getElementById("githubuser").value;
     var github_token = document.getElementById("githubtoken").value;
