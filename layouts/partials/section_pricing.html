@@ -60,8 +60,9 @@
       window.location = url;
     }
   }
- var formprefix = {{ $plan.partiallyid }};     
-  const form + formprefix = document.getElementById('form-{{ $plan.partiallyid }}');
+ var formprefix = {{ $plan.partiallyid }}; 
+ var toevaluate = "form" + formprefix;      
+  const evaluate(toevaluate) = document.getElementById('form-{{ $plan.partiallyid }}');
 
   form-{{ $plan.partiallyid }}.addEventListener('submit', logSubmit);
   function validation() {
