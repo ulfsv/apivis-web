@@ -67,7 +67,7 @@
     if (validation()) // Calling validation function
     {
       const Http = new XMLHttpRequest();
-      const url='https://demo.partial.ly/checkout?offer='+ offer + '&meta[github_user]=' + github_user + '&meta[github_token]=' + github_token + '&meta[description]=Subscribe';
+      const url='https://demo.partial.ly/checkout?offer='+ offer + '&meta[github_user]=' + github_user + '&meta[github_token]=' + github_token + '&amount=12&meta[description]=Subscribe';
 
       console.log('url ', url);
       window.location = url;
