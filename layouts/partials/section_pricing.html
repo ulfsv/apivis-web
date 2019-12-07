@@ -91,7 +91,7 @@ valid[user] = user + {{ $plan.partiallyid }};
  
    valid.token = document.getElementById("githubtoken-{{ $plan.partiallyid }}").value;
    valid.user = document.getElementById("githubuser-{{ $plan.partiallyid }}").value;
-       console.log(plan.token);
+       console.log(valid.token);
     //var emailReg = /^([w-.]+@([w-]+.)+[w-]{2,4})?$/;
     if (valid.user === '' || valid.token === '') {
       alert("Please fill in all fields!");
