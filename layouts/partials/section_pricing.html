@@ -18,7 +18,7 @@
         <div class="plan-inside">
         <h3 class="plan-name">{{ $plan.title }}</h3>
         {{ if $plan.price }}
-        <div class="plan-price">{{ $plan.price }}</div>
+        <div class="plan-price">{{ $plan.price }} {{ $plan.partiallyid }}</div>
         {{ end }}
         <div class="plan-details">
           {{ partial "markdownify-block" $plan.details }}
