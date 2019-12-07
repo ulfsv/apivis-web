@@ -66,7 +66,7 @@ mine[id] = {{ $plan.partiallyid }};
 console.log(mine.abc);     
  var formprefix = {{ $plan.partiallyid }}; 
 // var mine.abc = "form" + formprefix;      
-  const mine.abc = document.getElementById('form-{{ $plan.partiallyid }}');
+  mine.abc = document.getElementById('form-{{ $plan.partiallyid }}');
 
   form-{{ $plan.partiallyid }}.addEventListener('submit', logSubmit);
   function validation() {
