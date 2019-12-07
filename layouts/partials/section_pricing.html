@@ -23,7 +23,7 @@
         <div class="plan-details">
           {{ partial "markdownify-block" $plan.details }}
           
-          <form name="form_name" id="form" class="subscribe-form">
+          <form name="form_name" id="form-{{ $plan.partiallyid }}" class="subscribe-form">
           
           <p>Fill in your GitHub user and token to secure your Rodened server.</p>
 
@@ -45,20 +45,7 @@
    <input type="hidden" name="partiallyid" id="partiallyid" value="{{ $plan.partiallyid }}" />         
    </form>
 
-   
-        </div>
-        {{ if $plan.actions }}
-          {{ $include_dict := dict "actions" $plan.actions }}
-          {{ partial "cta_buttons.html" $include_dict }}
-        {{ end }}
-        </div><!-- .plan-inside -->
-      </div><!-- .cell -->
-
-      {{ end }}
-    </div><!-- .grid -->
-  </div><!-- .inner -->
-  {{ end }}
-  <script type="text/javascript"> 
+   <script type="text/javascript"> 
  function logSubmit(event) {
     event.preventDefault();
     var github_token = document.getElementById("githubtoken").value;
@@ -73,7 +60,7 @@
       window.location = url;
     }
   }
-  const form = document.getElementById('form');
+  const form = document.getElementById('form-{{ $plan.partiallyid }}');
 
   form.addEventListener('submit', logSubmit);
   function validation() {
@@ -88,4 +75,17 @@
     }
   }
 </script>
+        </div>
+        {{ if $plan.actions }}
+          {{ $include_dict := dict "actions" $plan.actions }}
+          {{ partial "cta_buttons.html" $include_dict }}
+        {{ end }}
+        </div><!-- .plan-inside -->
+      </div><!-- .cell -->
+
+      {{ end }}
+    </div><!-- .grid -->
+  </div><!-- .inner -->
+  {{ end }}
+  
 </section><!-- .block -->
