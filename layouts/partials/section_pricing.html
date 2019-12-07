@@ -29,28 +29,33 @@
 
             <div class="form-row"><label>
               <span class="screen-reader-text">GitHub User</span>
-<input type="text" class="subscribe-email" name="github_user" id="githubuser" placeholder="Enter GitHub User" style="margin-bottom:10px" />
+<input type="text" class="subscribe-email" name="github_user" id="githubuser-{{ $plan.partiallyid }}" placeholder="Enter GitHub User" style="margin-bottom:10px" />
               </label>
             </div>
           
               <div class="form-row"><label>
               <span class="screen-reader-text">GitHub Token</span>
-<input type="text" class="subscribe-email" name="github_token" id="githubtoken" placeholder="Enter GitHub Token" style="margin-bottom:10px" />
+<input type="text" class="subscribe-email" name="github_token" id="githubtoken-{{ $plan.partiallyid }}" placeholder="Enter GitHub Token" style="margin-bottom:10px" />
               </label>
             </div>
             
           
    <input type="submit" name="submit_class" id="btn_class" value="Subscribe" />
             
-   <input type="hidden" name="partiallyid" id="partiallyid" value="{{ $plan.partiallyid }}" />         
+   <input type="hidden" name="partiallyid" id="partiallyid-{{ $plan.partiallyid }}" value="{{ $plan.partiallyid }}" />         
    </form>
 
    <script type="text/javascript"> 
  function logSubmit(event) {
     event.preventDefault();
-    var github_token = document.getElementById("githubtoken").value;
-    var github_user = document.getElementById("githubuser").value;
-    var offer = document.getElementById("partiallyid").value;
+     var token = "token";
+     var user = "user";
+//var mine = {};
+//mine[token] = token + {{ $plan.partiallyid }};
+//mine[user] = token + {{ $plan.partiallyid }};       
+    var github_token = document.getElementById("githubtoken-{{ $plan.partiallyid }}").value;
+    var github_user = document.getElementById("githubuser-{{ $plan.partiallyid }}").value;
+    var offer = document.getElementById("partiallyid-{{ $plan.partiallyid }}").value;
     if (validation()) // Calling validation function
     {
       const Http = new XMLHttpRequest();
