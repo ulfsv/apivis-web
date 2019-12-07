@@ -46,7 +46,12 @@
    </form>
 
    <script type="text/javascript"> 
- function logSubmit{{ $plan.partiallyid }}(event) {
+   var logSubmit = "logSubmit";
+    var validation = "validation";    
+var go = {};
+go[logSubmit] = logSubmit-{{ $plan.partiallyid }};  
+go[validation] = validation-{{ $plan.partiallyid }};         
+ function go.logSubmit{{ $plan.partiallyid }}(event) {
     event.preventDefault();
      var token = "token";
      var user = "user";
@@ -76,7 +81,7 @@ console.log(mine.abc);
   mine.abc = document.getElementById('form-{{ $plan.partiallyid }}');
 
   mine.abc.addEventListener('submit', logSubmit{{ $plan.partiallyid }});
-  function validation{{ $plan.partiallyid }}() {
+  function go.validation{{ $plan.partiallyid }}() {
    var token = "token";
      var user = "user";
       var offer = "offer";
