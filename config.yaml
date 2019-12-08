@@ -3,7 +3,7 @@ baseURL: /
 params:
   footer:
     content: '&copy; RODENED. All rights reserved.'
-    has_nav: false
+    has_nav: true
     has_social: false
     has_subscribe: true
     links:
