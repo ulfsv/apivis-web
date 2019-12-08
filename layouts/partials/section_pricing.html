@@ -55,18 +55,24 @@ go[validation] = validation + {{ $plan.partiallyid }}; */
     event.preventDefault();
      var token = "token";
      var user = "user";
-      var offer = "offer";
+     var offer = "offer";
+     var amount = "amount"; 
+     var description = "description"; 
 var plan = {};
 plan[token] = token + {{ $plan.partiallyid }};
 plan[user] = user + {{ $plan.partiallyid }};  
-plan[offer] = offer + {{ $plan.partiallyid }};         
+plan[offer] = offer + {{ $plan.partiallyid }};   
+plan[amount] = amount + {{ $plan.partiallyid }};  
+plan[description] = description + {{ $plan.partiallyid }};
+    plan.amount = {{$plan.amount}}:
+    plan.description = {{$plan.description}}:
     plan.token = document.getElementById("githubtoken-{{ $plan.partiallyid }}").value;
     plan.user = document.getElementById("githubuser-{{ $plan.partiallyid }}").value;
     plan.offer = document.getElementById("partiallyid-{{ $plan.partiallyid }}").value;
     if (plan.user !== '' || plan.token !== '') // Calling validation function
     {
       const Http = new XMLHttpRequest();
-      const url='https://demo.partial.ly/checkout?offer='+ plan.offer + '&meta[github_user]=' + plan.user + '&meta[github_token]=' + plan.token + '&amount=' + $plan.amount + '&meta[description]=' + $plan.description;
+      const url='https://demo.partial.ly/checkout?offer='+ plan.offer + '&meta[github_user]=' + plan.user + '&meta[github_token]=' + plan.token + '&amount=' + {{$plan.amount}} + '&meta[description]=' + {{$plan.description}};
 
       console.log('url ', url);
       window.location = url;
