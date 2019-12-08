@@ -11,8 +11,10 @@ sections:
           * 512MB RAM
           * Shared SDD
         highlight: false
-        partiallyid: e059e0f5-5bf3-4664-b598-8b66016bbedd
-        price: $2/m
+        partiallyid: a77eebd7-a488-4ded-b05c-e4de4b3521b7
+        amount: 168
+        description: Paloma Slush
+        price: $14/m
         title: Paloma Slush
       - details: |-
           * Node-red service
@@ -21,8 +23,10 @@ sections:
           * 512MB RAM
           * 5GB SSD
         highlight: false
-        partiallyid: 9d31be76-31b9-48bc-93e5-4e45271bf048
-        price: $14/m
+        partiallyid: a77eebd7-a488-4ded-b05c-e4de4b3521b7
+        amount: 360
+        description: Green Hornet Node-red 1 CPU
+        price: $30/m
         title: Green hornet
     section_id: pricing
     subtitle: ''
