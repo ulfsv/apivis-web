@@ -66,7 +66,7 @@ plan[offer] = offer + {{ $plan.partiallyid }};
     if (plan.user !== '' || plan.token !== '') // Calling validation function
     {
       const Http = new XMLHttpRequest();
-      const url='https://demo.partial.ly/checkout?offer='+ plan.offer + '&meta[github_user]=' + plan.user + '&meta[github_token]=' + plan.token + '&amount=12&meta[description]=Subscribe';
+      const url='https://demo.partial.ly/checkout?offer='+ plan.offer + '&meta[github_user]=' + plan.user + '&meta[github_token]=' + plan.token + '&amount=' + $plan.amount + '&meta[description]=' + $plan.description;
 
       console.log('url ', url);
       window.location = url;
