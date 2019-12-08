@@ -5,7 +5,7 @@ params:
     content: '&copy; RODENED. All rights reserved.'
     has_nav: true
     has_social: false
-    has_subscribe: false
+    has_subscribe: true
     links:
       - new_window: true
         text: Made with Stackbit
