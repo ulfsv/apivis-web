@@ -23,7 +23,7 @@ sections:
           * 1GB RAM
           * 10GB SSD
         highlight: false
-        partiallyid: a77eebd7-a488-4ded-b05c-e4de4b3521b7
+        partiallyid: 84f1bbdc-86f8-41a5-b4ea-6262b0000c8e
         amount: 360
         description: Purple Super Paste 
         price: $30/m
