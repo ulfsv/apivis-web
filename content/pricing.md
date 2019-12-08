@@ -5,29 +5,25 @@ sections:
     pricingplans:
       - actions: []
         details: |-
-          * Node-red trial service
+          * Node-red service
           * Web-based
           * 1 Shared CPU
           * 512MB RAM
-          * Shared SDD
+          * 5GB SDD
         highlight: false
-        partiallyid: a77eebd7-a488-4ded-b05c-e4de4b3521b7
-        amount: 168
-        description: Paloma Slush
+        partiallyid: e059e0f5-5bf3-4664-b598-8b66016bbedd
         price: $14/m
-        title: Paloma Slush
+        title: Green hornet
       - details: |-
           * Node-red service
           * Web-based
           * 1 CPU
-          * 512MB RAM
-          * 5GB SSD
+          * 1GB RAM
+          * 10GB SSD
         highlight: false
-        partiallyid: a77eebd7-a488-4ded-b05c-e4de4b3521b7
-        amount: 360
-        description: Green Hornet Node-red 1 CPU
+        partiallyid: 9d31be76-31b9-48bc-93e5-4e45271bf048
         price: $30/m
-        title: Green hornet
+        title: Purple Super Paste
     section_id: pricing
     subtitle: ''
     title: Pricing Plans
