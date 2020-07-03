@@ -1,5 +1,5 @@
-title: Rodened
-baseURL: /
+title: APIVIS
+baseURL: https://www.apivis.com/
 params:
   footer:
     content: '&copy; RODENED. All rights reserved.'
